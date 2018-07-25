@@ -18,17 +18,29 @@ namespace CrveniKrst {
 
 		private int id;
 		private string ime;
-		private char[3] krvnaGrupa;
+		private char[] krvnaGrupa = new char[3];
 		private string prezime;
 
 		public Donor(){
 
 		}
 
-		~Donor(){
+        public Donor(int id, string ime, char[] krvnaGrupa, string prezime)
+        {
+            this.Id = id;
+            this.Ime = ime;
+            this.KrvnaGrupa = krvnaGrupa;
+            this.Prezime = prezime;
+        }
+
+        ~Donor(){
 
 		}
 
-	}//end Donor
+        public int Id { get => id; set => id = value; }
+        public string Ime { get => ime; set => ime = value; }
+        public char[] KrvnaGrupa { get => krvnaGrupa; set => krvnaGrupa = value; }
+        public string Prezime { get => prezime; set => prezime = value; }
+    }//end Donor
 
 }//end namespace CrveniKrst

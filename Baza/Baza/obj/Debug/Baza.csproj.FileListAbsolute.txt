@@ -1,0 +1,12 @@
+D:\th\RVA\Baza\Baza\obj\Debug\Baza.csprojResolveAssemblyReference.cache
+D:\th\RVA\Baza\Baza\obj\Debug\Baza.csproj.CoreCompileInputs.cache
+D:\th\RVA\Baza\Baza\bin\Debug\Baza.exe.config
+D:\th\RVA\Baza\Baza\bin\Debug\Baza.exe
+D:\th\RVA\Baza\Baza\bin\Debug\Baza.pdb
+D:\th\RVA\Baza\Baza\bin\Debug\EntityFramework.dll
+D:\th\RVA\Baza\Baza\bin\Debug\EntityFramework.SqlServer.dll
+D:\th\RVA\Baza\Baza\bin\Debug\EntityFramework.xml
+D:\th\RVA\Baza\Baza\bin\Debug\EntityFramework.SqlServer.xml
+D:\th\RVA\Baza\Baza\obj\Debug\Baza.csproj.CopyComplete
+D:\th\RVA\Baza\Baza\obj\Debug\Baza.exe
+D:\th\RVA\Baza\Baza\obj\Debug\Baza.pdb

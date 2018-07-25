@@ -17,10 +17,11 @@ using CrveniKrst;
 namespace CrveniKrst {
 	public class JedinicaTransfuzije {
 
+        private int id;
 		private int kolicina;
-		private char[3] krvnaGrupa;
+		private char[] krvnaGrupa = new char[3];
 		private string oznaka;
-		public CrveniKrst.Donor m_Donor;
+		private CrveniKrst.Donor m_Donor;
 
 		public JedinicaTransfuzije(){
 
@@ -30,6 +31,11 @@ namespace CrveniKrst {
 
 		}
 
-	}//end JedinicaTransfuzije
+        public int Kolicina { get => kolicina; set => kolicina = value; }
+        public char[] KrvnaGrupa { get => krvnaGrupa; set => krvnaGrupa = value; }
+        public string Oznaka { get => oznaka; set => oznaka = value; }
+        public Donor Donor { get => m_Donor; set => m_Donor = value; }
+        public int Id { get => id; set => id = value; }
+    }//end JedinicaTransfuzije
 
 }//end namespace CrveniKrst
