@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{BE475C6C-030B-4E41-8E15-FC885A37717F}</ProjectGuid>
+    <ProjectGuid>{8E330C4A-FAF7-4459-B429-A4DFEC64EAAF}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>projekat</RootNamespace>
-    <AssemblyName>projekat</AssemblyName>
+    <RootNamespace>Baza</RootNamespace>
+    <AssemblyName>Baza</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,18 +42,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\..\CrveniKrst\BankaKrvi.cs">
-      <Link>NewFolder1\BankaKrvi.cs</Link>
-    </Compile>
-    <Compile Include="..\..\CrveniKrst\Donor.cs">
-      <Link>NewFolder1\Donor.cs</Link>
-    </Compile>
-    <Compile Include="..\..\CrveniKrst\JedinicaTransfuzije.cs">
-      <Link>NewFolder1\JedinicaTransfuzije.cs</Link>
-    </Compile>
-    <Compile Include="..\..\CrveniKrst\Pacijent.cs">
-      <Link>NewFolder1\Pacijent.cs</Link>
-    </Compile>
+    <Compile Include="Baza\BankaKrvi.cs" />
+    <Compile Include="Baza\Donor.cs" />
+    <Compile Include="Baza\JedinicaTransfuzije.cs" />
+    <Compile Include="Baza\Pacijent.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
