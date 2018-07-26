@@ -10,25 +10,72 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.IO;
+using Common.DTO;
 
-
-
-namespace CrveniKrst {
+namespace Baza.Baza
+{
 	public class Donor {
 
 		private int id;
 		private string ime;
-		private char[3] krvnaGrupa;
+		private char[] krvnaGrupa = new char[3];
 		private string prezime;
 
 		public Donor(){
 
 		}
 
-		~Donor(){
+        public Donor(DonorDTO donorDTO)
+        {
+            this.Ime = donorDTO.Ime;
+            this.KrvnaGrupa = donorDTO.KrvnaGrupa;
+            this.Prezime = donorDTO.Prezime;
+        }
+
+        public Donor(int id, string ime, char[] krvnaGrupa, string prezime)
+        {
+            this.Id = id;
+            this.Ime = ime;
+            this.KrvnaGrupa = krvnaGrupa;
+            this.Prezime = prezime;
+        }
+
+        ~Donor(){
 
 		}
 
-	}//end Donor
+        public int Id { get => id; set => id = value; }
+        public string Ime { get => ime; set => ime = value; }
+        public char[] KrvnaGrupa { get => krvnaGrupa; set => krvnaGrupa = value; }
+        public string Prezime { get => prezime; set => prezime = value; }
+
+        public bool MatchesFilter(DonorDTO donorDTO)
+        {
+            if(donorDTO.Id!=0 && donorDTO.Id != id)
+            {
+                return false;
+            }
+            if(!donorDTO.Ime.Trim().Equals("") && !donorDTO.Ime.Equals(ime))
+            {
+                return false;
+            }
+            if (!donorDTO.Prezime.Trim().Equals("") && !donorDTO.Prezime.Equals(prezime))
+            {
+                return false;
+            }
+            string krvnaGrupaDonora = new string(krvnaGrupa);
+            string krvnaGrupaDonorDTO = new string(donorDTO.KrvnaGrupa);
+            if(!krvnaGrupaDonorDTO.Trim().Equals("") && !krvnaGrupaDonorDTO.Equals(krvnaGrupaDonora))
+            {
+                return false;
+            }
+
+
+
+
+
+            return true;
+        }
+    }//end Donor
 
 }//end namespace CrveniKrst

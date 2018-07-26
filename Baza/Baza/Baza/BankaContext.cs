@@ -1,4 +1,4 @@
-﻿using CrveniKrst;
+﻿
 using System;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -15,6 +15,6 @@ namespace Baza.Baza
         public DbSet<Donor> Donori { get; set; }
         public DbSet<Pacijent> Pacijenti { get; set; }
         public DbSet<JedinicaTransfuzije> JediniceTransfuzije { get; set; }
-
+        
     }
 }

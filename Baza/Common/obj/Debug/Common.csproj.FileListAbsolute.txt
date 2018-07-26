@@ -1,0 +1,6 @@
+D:\RVA_git\RVA_projekat\Baza\Common\bin\Debug\Common.dll
+D:\RVA_git\RVA_projekat\Baza\Common\bin\Debug\Common.pdb
+D:\RVA_git\RVA_projekat\Baza\Common\obj\Debug\Common.csprojAssemblyReference.cache
+D:\RVA_git\RVA_projekat\Baza\Common\obj\Debug\Common.csproj.CoreCompileInputs.cache
+D:\RVA_git\RVA_projekat\Baza\Common\obj\Debug\Common.dll
+D:\RVA_git\RVA_projekat\Baza\Common\obj\Debug\Common.pdb

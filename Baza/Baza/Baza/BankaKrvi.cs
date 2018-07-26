@@ -13,19 +13,27 @@ using System.IO;
 
 
 
-using CrveniKrst;
-namespace CrveniKrst {
+
+namespace Baza.Baza
+{
 	/// <summary>
 	/// Jedinica transfuzije
 	/// </summary>
 	public class BankaKrvi {
 
+        private int id;
 		private string adresa;
 		private int brojBanke;
-		public CrveniKrst.Pacijent m_Pacijent;
-		public CrveniKrst.JedinicaTransfuzije m_JedinicaTransfuzije;
+        private Pacijent pacijent;
+        private JedinicaTransfuzije jedinicaTransfuzije;
 
-		public BankaKrvi(){
+        public string Adresa { get => adresa; set => adresa = value; }
+        public int BrojBanke { get => brojBanke; set => brojBanke = value; }
+        public Pacijent Pacijent { get => pacijent; set => pacijent = value; }
+        public JedinicaTransfuzije JedinicaTransfuzije { get => jedinicaTransfuzije; set => jedinicaTransfuzije = value; }
+        public int Id { get => id; set => id = value; }
+
+        public BankaKrvi(){
 
 		}
 
